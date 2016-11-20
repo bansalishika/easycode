@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EASYCODE|CSS </title>
+
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css_style.css">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color:red">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">EASYCODE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="why.html">Why Coding </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="HTML.html">HTML</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="jQuery.html">jQuery</a>
+                    </li>
+                    <li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+
+    <h1><strong>CSS</strong></h1>
+    <p>CSS is basically to design or to make the webpage look attractive. It works on the aesthetics of a webpage and beautifies HTML.</p> 
+        <hr>
+    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; margin-right:180px; max-height: 400px; margin-left:25px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/css-html-in-email.png"/>
+    <h2><strong>What all we will learn ?</strong></h2>
+    <p>1.Connecting HTML to CSS/p>
+    <p>2.How to put a value in CSS tab</p>
+    <p>3.Backup Values</p>
+    <p>4.Making a button</p>
+    <p>5.Universal Selector </p>
+    <p>6.Taking up space</p>
+    <p>7.Floating and Clearing</p>
+    <p>8.ID's and Classes </p>
+</p>
+    <p> CSS (which stands for Cascading Style Sheets) is a language used to describe the appearance and formatting of your HTML</p>
+    <hr>
+    <h3>Connecting HTML to CSS</h3>
+    <hr>
+    <p> <code>&lt;link type="text/css" rel="stylesheet" href=“stylesheet.css”&gt;</code>
+</p>
+    <hr>
+    <h3> How to put values in a CSS tab</h3>
+    <hr>
+    <p> element <span class='color'>{ add the values here;} </span> </p>
+    <hr>
+    <h3>Backup Values</h3>
+    <hr>
+    <p>You don't have to jump straight to a default value like cursive or sans-serif: you can tell CSS to try several, going from one to the next if the one you want isn't available.</p>
+    <p>For example, if you write about fonts. CSS will first try to apply Tahoma to your paragraphs. If the user's computer doesn't have that font, it will try Verdana next, and if that doesn't work, it will show a default sans-serif font.</p>
+    <p> <code>&lt; font-family: Verdana, Tahoma/&gt; </code> <span class='color'>(first write the original value and then the backup value) </span>
+ </p>
+    <hr>
+    <h3>Making a Button</h3>
+    <hr>
+    <div class="row">
+    <img style="float: right; margin: 0 20px 20px 0; max-height: 200px; margin-left:25px; margin-right:200px; margin-top:40px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/CSS.png">
+    <p>  div tags used for buttons are :  </p>
+    <ul>
+        <li>height</li>
+        <li>width</li>
+        <li> border-color</li>
+        <li>border-radius</li>
+        <li><u>margin</u> <span class='color'>(mostly to kept on auto) </span> </li>
+        <li>padding </li>
+        <li>text-tranformation</li>
+        <li>text-align <span class='color'>(to be kept on centre)</span></li>
+    </ul> 
+</div>
+    <hr>
+    <h3>Universal Selector</h3>
+    <hr>
+    <p>There's also a very special selector you can use to apply CSS styling to every element on the page: the * selector. For example, if you type</p>
+    <pre style="background-color:black; color: #2cff2c; max-width: 700px">
+    * { 
+    border: 2px solid black; 
+    }
+</pre>
+    You'll create a two-pixel wide solid black border around every element on the HTML page.
+
+    <hr>
+    <h3>Taking Up Space</h3>
+    <hr>
+
+
+
+    <p>Each HTML box gets its own space using 4 methods: </p>
+    <ol>
+        <li><u>block</u>: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width.</li>
+        <li><u>inline-block</u>: This makes the element a block box, but will allow other elements to sit next to it on the same line.
+</li>
+        <li>
+<u>inline</u>: This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).</li>
+        <li><u>none</u>: This makes the element and its content disappear from the page entirely!</li>
+    </ol>
+    <p class="color"> <strong>Note</strong> : change the display property of all your &lt;div&gt; to use the above methods. </p>
+    <hr>
+    <p>Margin: Space around the element. The larger the margin, the more space between our element and the elements around it.</p>
+    <p>There are 2 ways to set the margin </p>
+    <ul>
+        <li><code>margin-top: (value)
+margin-right: (value)
+margin-bottom: (value)
+margin-left: (value)
+or (value, value, value, value)</code></li> 
+        <li> <code>.margin: auto  </code></li> 
+
+
+    </ul>
+    <p>Border: Edge of the element. It's what we've been making visible every time we set the border property. They can be set just like margin. Either by putting all the values together (value, value, value, value) or one by one. 
+</p>
+    <p>Padding-  spacing between the content and the border. They can be set just like margin. Either by putting all the values together <span class="color"> (value, value, value, value) </spam> or one by one. </p>
+
+    <p>Moving the values to the negative side : moving an element in the other direction, one can give CSS a negative value: </p>
+    <p>For instance, margin-left: -20px will move the element twenty pixels to the left. 
+</p>
+    <p>
+        <hr>
+SOME KEY WORDS FOR THE ABOVE INFORMATION : </p>
+    <p>TM- Top Margin 
+</p>
+    <p>TB- Top Border</p>
+    <p>TP - Top Padding</p>
+    <hr>
+    <h3>Floating and Clearing </h3>
+    <hr>
+    <img style="float: left; margin-top:0px; margin-right:20px; max-height: 400px; margin-left: 0px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/images.jpeg"/>
+    <p>FLOATING: It helps to position the elements such that the other elements floating do not get disturbed and all of them don’t land on top of each other. </p>
+    <p>The div used is float.  It can be written as for - Right or Left. </p>
+    <p>CLEARING If sometimes the elements come on top of each other. This is used. </p>
+    <p>clear: left :  it will immediately move below any floating elements on the left side of the page; it can also clear elements on the right. </p>
+    <p>clear: both :  it will get out of the way of elements floating on the left and right</p>
+    <p class="color">NOTE : If things are not positioned it just plunks itself down in the document.</p>
+    <hr>
+    <p> TYPES OF POSITIONING</p>
+    <p>There are 3 types of positioning- </p>
+    <p>1.  Absolute :  Absolute positioning is in relation to the first parent element it has that doesn't have position: static.</p>
+    <p>2. Relative : Relative positioning tells the element to move relative to where it would have landed if it just had the default static positioning.</p>
+    <p>3.  Fixed : Fixed element stays put even as other elements scroll past.</p>
+    <hr>
+    <h3>ID'S and Classess</h3>
+    <hr>
+
+    <ul>
+        <li>Writing again and again the similar code can be sometimes difficult.  </li>
+        <li>Classes are used when the same code needs to be written for various parts. </li>
+        <li>ID’s on the other hand are kind of exception. They cannot be repeated and hence stand out. </li>
+        <li>They both are used while working with CSS and HTML. <span class="color">(both at the same time.)</span></li>
+        <li>Writing ID’s with a hash tag <span class="color"> (#ID name) </span> and Classes with a dot/ full stop in the starting <span class="color">(.class name) </span> is how we write the code in the CSS tab.</li>
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>

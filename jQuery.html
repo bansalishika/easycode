@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EASYCODE|jQUERY</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href="css/creative.css" rel="stylesheet">
+
+
+</head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jQuery_style.css">
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color:red">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">EASYCODE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="why.html">Why Coding </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="HTML.html">HTML</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="jQuery.html">jQuery</a>
+                    </li>
+              
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+
+
+    <h1><strong>jQuery</strong></h1>
+    <p>jQuery helps to animate HTML elements and make them interactive. 
+    <p>Connecting HTML and CSS with jQuery : </p>
+    <p> <code>&lt;script type="text/javascript" src=“script.js”&gt;&lt;/script&gt; </code>
+</p>
+<hr>
+    <h2><strong>What all we will learn ?</strong></h2>
+    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; max-height: 400px; margin-left:25px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/yeti-jquery.png"/>
+    <p>1.Basic Code for jQuery</p>
+    <p>2.jQuery events and their functions</p>
+    <p>3.Adding fadeTo to mouse enter</p>
+    <p>4.Extra Points For Working With jQuery</p>
+    <p>5.Adding Before And After An Element</p>
+    <p>6.Moving Elements</p>
+    <p>7.Removing Elements</p>
+    <p>8.Altering the Classes</p>
+    <p>9.Changing The Style</p>
+    <p>10.Hover</p>
+    <p>11.Some More Events And Their Functions</p>
+    <p>12.jQuery UI</p>
+    <hr>
+    <h3>Basic Code For jQuery</h3>
+    <hr>
+    <pre style="background-color:black; color: #2cff2c; max-width: 900px">
+    $(document).ready(); <span class="color">(this says that when a HTML document is ready, it would do something) </span>
+    $ - things are about to happen
+    (document) - on which part are they about to happen 
+    both of them together : turns document into a jQuery object 
+    .ready();  - what event will occurs as soon as the document is ready or helper that runs the code. 
+    function() {}  - what the document performs.
+</pre>
+    <p><strong>EXTRA</strong></p>
+    <p>We put <code>function(){}</code> inside your <code>.ready() </code>to work. </p> 
+    <hr>
+
+    <h3>jQuery Events And Their Functions </h3>
+    <hr>
+    <p>Some of the functions which can be used and their functions </p>
+   <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>jQuery Event/ Object </th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>.slidedown()</td>
+      <td>to slide something <span class=".color">(used in div).</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>mouseenter()</td>
+      <td>  Change produced by mouse enters a given HTML element.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>fadeTo()</td>
+      <td>It takes 2 arguments. As the name suggests, it helps to fade a particular div when needed. ( writing it: (‘fast’, 0.25) )</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>.slideToggle()>/td>
+      <td>  This jQuery event when need to toggle our sliding panel. This object will help to speed slide animation</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>.append ()</td>
+      <td>  Inserts a specific element as the last child.</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>.prepend()</td>
+      <td>  Specified inserts element as the first child of the target element.
+</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>.toggleClass()</td>
+      <td>  This object removes a class; if the target element doesn't have that class, <code>.toggleClass() </code>adds it.</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>appendTo()</td>
+      <td>Reverse of what actually an action does. Example: <code>$(‘<p> Stuff!</p > ).appendTo(‘.info’)</code></td>
+    </tr>
+  </tbody>
+</table>
+    
+    <p>Example 1 :  to write a code in jQuery </p>
+    <pre style="background-color:black; color: #2cff2c; max-width: 900px">
+    $(document).ready(function() { 
+    $(‘div’).mouseenter 
+    $(‘div’).hide() 
+</pre>
+    <hr>
+    <h3> Adding fadeTo to mouse enter</h3>
+    <hr>
+    <pre style="background-color:black; color: #2cff2c; max-width: 900px">
+    $(document).ready()
+    $(‘div’).mouseenter(….()) { 
+</pre>
+
+    <p></code> $p </code>- just variable name and to tell that it is a jQuery object.  </p>
+    <p><code>$()</code>- creates jQuery objects.</p>
+    <p>Writing variable names : <code>var name = value </code></p>
+    <hr>
+
+    <h3>Extra Points For Working With jQuery</h3>
+    <hr>
+    <ul>
+        <li>To show when a particular object is clicked : <code>.click(function(‘button’)</code>)
+ When we can apply <code>FadeOut()</code> ti 2 things it is known as compound selector. </li>
+        <li><code>$()</code> - This is the function in disguise that creates jQuery objects.</li>
+        <li><code>$p </code>- It is just a variable name  </li>
+        <li><code>this </code>-  The this keyword refers to the jQuery object you're currently doing something with. If you want to continue doing something with only one variable, instead of writing it in the code again and again, write this.</li>
+        <li>Actual event that occurs (such as <code>fadeOut()</code> ) on <code>$(this)</code> and the event will only affect the element you’re currently doing something with</li>
+    </ul>
+    <hr>
+
+    <h3>Adding Before And After An Element</h3>
+    <hr>
+    <p> - this code helps to add something before or after a phrase. </p>
+    <p><code>$(‘target’).after/.before(‘<tag> write whatever you need to add</tag>’)</code></p>
+    <hr>
+
+    <h3>Moving Elements</h3>
+    <hr>
+    <p>Step 1  (line1) : <code>var $variable = $(‘element’) </code>  <span class="color">(to move it, use after or before statements) </span>
+</p>
+    <p>Step 2  (line2) : <code>$(“div”).after($variable) </code> <span class="color"> (write whatever the variable says after ‘div’)</p> </span>
+    <hr>
+
+    <h3>Removing Elements</h3>
+    <hr>
+    <p>
+<code>.empty()</code></p>            
+    <p><code>(.empty() </code>deletes an element's content and all its descendants. For instance, if you <code>.empty() </code> an 'ol', you'll also remove all its 'li's and their text.)</p>
+
+    <p><code>.remove()</code> <span class="color">(deletes the content itself) </span></p>
+    <hr>
+
+
+    <h3>Altering The Classes</h3>
+    <hr>
+    <p>can be done using 2 methods.</p> 
+    <p>Either by <code>.addClass() or .removeClass() </code>    <span class="color"> (no need # or . before your class)</p> </span>
+    <p>Example : <code>$(‘selector (element)’).addClass(‘className (name of a particular class)’) </code>
+</p>
+    <hr>
+    <h3>Changing The Style</h3>
+    <hr>
+    <ul>
+        <li>functions used to change the style are - <code>.height() , .width(), .css() </code>
+</li>
+        <li>Example: <code> $(“div”).height(“100px”) </code> <span class="color">(same to do with width) </span></li>
+        <li>For .css() — Example: <code>$(‘div (thing which needs to be altered)’).css(‘background-color’, “color name” </code> <span class="color">(this line will take the value to be set.)) </span></li>
+    </ul>
+    <hr>
+
+
+    <h3>Hover</h3>
+    <hr>
+    <ul>
+        <li>Creating an effect when mouse is on top of an object, then have that effect vanish when your mouse moved away. </li>
+        <li>Applying it : Select the element <span class="color"> (eg: div) </span>and then</li>
+    </ul>
+    <pre style="background-color:black; color: #2cff2c; max-width: 900px">
+    $(‘div’).hover ( 
+    function() { 
+    $(this).addclass(‘highlight’); }; 
+    function() {
+    $(this).removeClass(‘highlight’); 
+    } 
+    ); 
+</pre>
+
+    <hr>
+
+    <h3>Some More Events And Their Functions</h3>
+    <hr>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>jQuery Event</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.html()</td>
+      <td>  They are used to modify the content</td>
+    </tr>
+    <tr>
+      <td>.val()</td>
+      <td>They are used to modify the content</td>
+    </tr>
+    <tr>
+      <td>.on</td>
+      <td>General handler that takes the event, its selector and an action as inputs. 
+Example:
+<code> $(document).on(‘event(click)’.’selector(‘.item’)’)</code></td>
+    </tr>
+    <tr>
+      <td>.dblclick() Event</td>
+      <td>When the user double clicks this function is used. /td>
+    </tr>
+        <tr>
+      <td>.focus()</td>
+      <td>Used when we click on it or tab over to it. Eg: filled a form on a webpage and seen how each text box lights up when you tab it or click on it, you have seen focus in action. </td>
+    </tr>
+    <tr>
+      <td>.keydown()</td>
+      <td>Used when an event needs to be triggered whenever a key on the key board is pressed. </td>
+    </tr>
+    <tr>
+      <td>.animate()</td>
+      <td>Move objects on the screen whenever we press a key. It takes 2 inputs.                                             -Animation to perform                                       -Time in which to perform 
+
+<p>CODE:</p> <p><code>$(‘div’).animate({left:’+=10px’},500); })</code>
+The above code understanding in a better manner. 
+<ul>
+<li>The pixels on the screen are laid out in a grid form o- 127.</li> 
+<li>To use one of it there is a particular code for each.</li>
+<li>(0- 0 ) is the top-left corner. So, for instance, if one adds 1 to x, it will move to right and vice versa for left.</li> 
+<li>To move up, up- top i.e. 10 minus 10 and to go down we will add 10. </span></li> 
+</ul></td>
+  </tbody>
+</table>
+    <hr>
+    <h3> jQuery UI</h3>
+    <hr>
+    <p>A library of jQuery that includes present animations. 
+some of the animations are listed below :</p>
+    <ol> 
+        <li> <code>.effect()</code> using it like : <code>.effect(‘explode’) </code></li>
+        <li><code>.bounce()</code> (using it like : <code>.effect(‘bounce’, {times:2}, 200))</code> </li>
+        <li><code>.slide()</code></li>
+        <li><code>.draggable()</code></li>
+        <li><code>.resizable()</code></li> 
+
+
+    </ol>
+    <p>Selectors for lists  <span class="color">(recording elements in our lists) </span></p>
+    <ol>
+        <li><code>selectable() </code> </li>
+        <li><code>.sortable()</code></li>
+        <li><code>.accordian()</code></li>
+
+    </ol>
+
+
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
