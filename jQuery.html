@@ -73,7 +73,7 @@
 </p>
 <hr>
     <h2><strong>What all we will learn ?</strong></h2>
-    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; max-height: 400px; margin-left:25px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/yeti-jquery.png"/>
+    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; max-height: 400px; margin-left:25px" src="images/yeti-jquery.png"/>
     <p>1.Basic Code for jQuery</p>
     <p>2.jQuery events and their functions</p>
     <p>3.Adding fadeTo to mouse enter</p>
@@ -91,11 +91,11 @@
     <hr>
     <pre style="background-color:black; color: #2cff2c; max-width: 900px">
     $(document).ready(); <span class="color">(this says that when a HTML document is ready, it would do something) </span>
-    $ - things are about to happen
-    (document) - on which part are they about to happen 
-    both of them together : turns document into a jQuery object 
-    .ready();  - what event will occurs as soon as the document is ready or helper that runs the code. 
-    function() {}  - what the document performs.
+    $ -  <span class="color">things are about to happen </span>
+    (document) -  <span class="color">on which part are they about to happen </span>
+    both of them together :  <span class="color">turns document into a jQuery object  </span>
+    .ready();  -  <span class="color">what event will occurs as soon as the document is ready or helper that runs the code.  </span>
+    function() {}  -   <span class="color">what the document performs. </span>
 </pre>
     <p><strong>EXTRA</strong></p>
     <p>We put <code>function(){}</code> inside your <code>.ready() </code>to work. </p> 
@@ -158,6 +158,7 @@
 </table>
     
     <p>Example 1 :  to write a code in jQuery </p>
+    <p>The way .mouseenter is added to the code, in the same way all the above codes cam be also added. </p>
     <pre style="background-color:black; color: #2cff2c; max-width: 900px">
     $(document).ready(function() { 
     $(‘div’).mouseenter 
@@ -180,7 +181,7 @@
     <hr>
     <ul>
         <li>To show when a particular object is clicked : <code>.click(function(‘button’)</code>)
- When we can apply <code>FadeOut()</code> ti 2 things it is known as compound selector. </li>
+ When we can apply <code>FadeOut()</code> to 2 things it is known as compound selector. </li>
         <li><code>$()</code> - This is the function in disguise that creates jQuery objects.</li>
         <li><code>$p </code>- It is just a variable name  </li>
         <li><code>this </code>-  The this keyword refers to the jQuery object you're currently doing something with. If you want to continue doing something with only one variable, instead of writing it in the code again and again, write this.</li>
@@ -203,8 +204,7 @@
 
     <h3>Removing Elements</h3>
     <hr>
-    <p>
-<code>.empty()</code></p>            
+           
     <p><code>(.empty() </code>deletes an element's content and all its descendants. For instance, if you <code>.empty() </code> an 'ol', you'll also remove all its 'li's and their text.)</p>
 
     <p><code>.remove()</code> <span class="color">(deletes the content itself) </span></p>
@@ -297,6 +297,12 @@ The above code understanding in a better manner.
 </ul></td>
   </tbody>
 </table>
+    <p>The way .mouseenter is added to the code, in the same way all the above codes cam be also added. </p>
+    <pre style="background-color:black; color: #2cff2c; max-width: 900px">
+    $(document).ready(function() { 
+    $(‘div’).mouseenter 
+    $(‘div’).hide() 
+</pre>
     <hr>
     <h3> jQuery UI</h3>
     <hr>

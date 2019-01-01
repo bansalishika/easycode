@@ -69,7 +69,7 @@
     <div class="row">
     <p>HTML is the standard markup language for creating Web pages. It stands for Hyper Text Markup Language. It describes the structure of Web pages using markup and its elements are the building blocks of HTML pages.</p>
     <hr>
-    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; max-height: 400px; margin-left:25px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/HTML.jpg"/>
+    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; max-height: 400px; margin-left:25px" src="images/HTML.jpg"/>
     <h2><strong>What all we will learn ?</strong></h2>
     <p>  1.Basic Structure of An HTML Code</p>
     <p>  2.Lists</p>
@@ -86,15 +86,16 @@
 
     <h3>Basic Structure Of An HTML Code</h3>
     <hr>
+    <p>To start a tag use &lt;&gt; tags and to end it always put / before the closing &gt;</p>
     <p>Indentation is always needed to write a basic HTML code.(whatever written in <code>&lt;&gt; </code> is called as tags)</p>
     <pre style="background-color:black; color: #2cff2c; max-width: 700px">
      &lt;!DOCTYPE html&gt;     <span class="color">(This tells the browser what language it's reading)</span> 
      &lt;html&gt;        <span class="color"> (this starts the HTML document.) </span></p>
-     &lt;head&gt;  
-     &lt;title&gt; &lt;/title&gt;  
+     &lt;head&gt;    
+     &lt;title&gt; &lt;/title&gt;    <span class="color"> (defines the title of the document in the browser tool bar.) </span></p>
      &lt;/head&gt;  
-     &lt;body&gt; &lt;/body&gt; 
-     &lt;/html&gt;
+     &lt;body&gt; &lt;/body&gt;   <span class="color"> (This element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.) </span></p> 
+     &lt;/html&gt;    <span class="color"> (this closes the HTML document) </span></p>
     </pre>
     <hr>
 
@@ -108,35 +109,43 @@
     &lt;/ul&gt; 
 </pre>
     <li>Ordered Lists: This list have no.s written. </li>
+    <pre style="background-color:black; color: #2cff2c; max-width: 700px">
+    &lt;ol&gt; 
+    &lt;li&gt;<span class="color">(content) </span>&lt;li&gt; 
+    &lt;/ol&gt; 
+    </pre>
 </ol>
     <p class="color"> NOTE : Lists can have sub- lists using the same method. </p>
     <hr>
 
     <h3>Comments</h3>
     <hr>
-    <p> Comments: Comments will only be visible on the code/ program and wont come on the web page. Mostly, they can be used to sort the codes and note some important things.</p>
+    <p> Comments: Comments will only be visible on the code/ program and won't come on the web page. Mostly, they can be used to sort the codes and note some important things.</p>
     <p>TAG : <code>&lt;!—…—&gt; </code></p>
     <hr>
     <h3>Basic Styling</h3>
+     <h4><strong>&lt;h1&gt; - &lt;h6&gt; tags </strong></h4>
+    <p>&lt;h1&gt; is used to put headings on a website. Here, h1 tag is used for the biggest size and h6 tags are for the smallest. Using these tags is just like one uses p tags. Eg: <code>&lt;h1&gt; WRITE THE HEADING &lt;/h1&gt;</code></p>
+    <p style='color: red'>The first text is written using h1 tag, whereas the second text is written using h6 tag.</p>
+    <img src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%206.57.47%20pm.png">
     <hr>
-    <p>Changing the font size, font colour or font style is some of the basic things a webpage would need.</p>
+    <p>Basic styling for a paragraph</p>
     <p> <code>&lt; p style=“font-size:( write the font size required in numerical form)”&gt; </code></p>
     <ul>
-        <li><p> The above code says that the following styling should be done for all the p tags i.e. paragraphs.  
-</li>
-        <li>If one needs to change the style of a heading, use h1 tags instead of <p> tags. 
+        <li>If one needs to change the style of a heading, use h1 tags instead of p tags. 
 </li>
         <li> Same format will be used for the following styling features: 
             <ol>
-                <li>Background-color</li>
                 <li>Text-align</li>
                 <li>Font color</li>
                 <li>Font size</li>
             </ol>
         </li>
     </ul>
-    <p>To write something in Bold, use <strong> </strong> tags and for italic use <em></em> tags. 
+    <p>To write something in Bold, use &lt;strong&gt; &lt;/strong&gt; tags and for italic use &lt;em&gt; &lt;/em&gt;  tags. 
 Just place the phrase in between the tags and it will be styled. </p>
+    <p>Example: If lets say, you want code to be in bold letters, you will write :<code> I like to &lt;strong&gt; code &lt;/strong&gt; </code></p>
+    <p>Example 2: If lets say, you want code to be in italic, you will write: <code> I like to &lt;em&gt; code &lt;/em&gt; </code></p>
     <hr>
 
     <h3>Making Tables</h3>
@@ -152,29 +161,39 @@ Just place the phrase in between the tags and it will be styled. </p>
    &lt;/body&gt; 
 </pre>
 
-
-    <p>The <thead> tag is used to group header content in an HTML table. The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table <span class="color">(header, body, footer) </span>. Browsers can use these elements to enable scrolling of the table body independently of the header and footer.</p>
     <hr>
     <h3>Format For thead Tag </h3>
     <hr>
+    <p>The &lt;thead&gt; tag is used to group header content in an HTML table. The <thead> element is used in conjunction with the &lt;tbody&gt;  and &lt;tfoot&gt;  elements to specify each part of a table <span class="color">(header, body, footer) </span>. Browsers can use these elements to enable scrolling of the table body independently of the header and footer.</p>
     <pre style="background-color:black; color: #2cff2c; max-width: 700px">
-    &lt;thead &gt;
-    &lt;tr &gt;  <span class="color"> (for forming a row) </span> 
-    &lt;th &gt;  <span class="color"> (head name) </span> &lt;/th &gt; 
-    &lt;th &gt;  <span class="color">(can be added for another column) </span> &lt;/th &gt;
-    &lt;/tr &gt;
+    &lt;thead&gt;
+    &lt;tr&gt;  <span class="color"> (for forming a row) </span> 
+    &lt;th&gt;  <span class="color"> (head name) </span> &lt;/th &gt; 
+
+
+
+    &lt;th&gt;  <span class="color">(can be added for another column) </span> &lt;/th&gt;
+
+
+
+
+
+    &lt;/tr&gt;
+    &lt;/thead&gt;
     </pre>
     <hr>
     <h3>tbody Tags </h3>
     <hr>
-    <p> The <tbody> tag is used to group the body content in an HTML table.
+    <p> The &lt;tbody&gt; tag is used to group the body content in an HTML table.
 format for <code>&lt;tbody&gt; </code> tags is exactly like <code>&lt; thead&gt;</code> </p>
     <hr>
     <h3>Different colors for different rows </h3>
     <hr>
-    <p><code>&lt; div style=“width:(numerical px); height :(numerical px); background-color:(colour name) ”&gt; </code> </p>
+    <p><code>&lt;div style= width:(numerical px); height:(numerical px); background-color:(colour name) &gt; </code> </p>
+
     <p>Incase of only one word:</p>
-    <p><code>&lt; span&gt; (style names such as font-color etc ) &lt/span&gt; </code></p>
+    <p><code> &lt;span&gt; (style names such as font-color etc ) &lt;/span&gt;</code></p>
+    <img src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%207.12.24%20pm.png">
     <hr>
     <h3>Tips For Writing HTML Codes </h3>
     <hr>

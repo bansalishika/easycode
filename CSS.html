@@ -70,7 +70,7 @@
     <h1><strong>CSS</strong></h1>
     <p>CSS is basically to design or to make the webpage look attractive. It works on the aesthetics of a webpage and beautifies HTML.</p> 
         <hr>
-    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; margin-right:180px; max-height: 400px; margin-left:25px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/css-html-in-email.png"/>
+    <img style="float: right; margin: 0 20px 20px 0; margin-top:50px; margin-right:180px; max-height: 400px; margin-left:25px" src="images/css-html-in-email.png"/>
     <h2><strong>What all we will learn ?</strong></h2>
     <p>1.Connecting HTML to CSS/p>
     <p>2.How to put a value in CSS tab</p>
@@ -95,14 +95,14 @@
     <h3>Backup Values</h3>
     <hr>
     <p>You don't have to jump straight to a default value like cursive or sans-serif: you can tell CSS to try several, going from one to the next if the one you want isn't available.</p>
-    <p>For example, if you write about fonts. CSS will first try to apply Tahoma to your paragraphs. If the user's computer doesn't have that font, it will try Verdana next, and if that doesn't work, it will show a default sans-serif font.</p>
+    <p>For example, if you write about fonts. CSS will first try to apply Verdana to your paragraphs. If the user's computer doesn't have that font, it will try Tahoma next, and if that doesn't work, it will show a default sans-serif font.</p>
     <p> <code>&lt; font-family: Verdana, Tahoma/&gt; </code> <span class='color'>(first write the original value and then the backup value) </span>
  </p>
     <hr>
     <h3>Making a Button</h3>
     <hr>
     <div class="row">
-    <img style="float: right; margin: 0 20px 20px 0; max-height: 200px; margin-left:25px; margin-right:200px; margin-top:40px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/CSS.png">
+    <img style="float: right; margin: 0 20px 20px 0; max-height: 200px; margin-left:25px; margin-right:200px; margin-top:40px" src="images/CSS.png">
     <p>  div tags used for buttons are :  </p>
     <ul>
         <li>height</li>
@@ -114,6 +114,9 @@
         <li>text-tranformation</li>
         <li>text-align <span class='color'>(to be kept on centre)</span></li>
     </ul> 
+    <img src ="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%207.21.44%20pm.png">
+    <p></p>
+    <p>The above sample helps to understand how one can make a button.</p>
 </div>
     <hr>
     <h3>Universal Selector</h3>
@@ -130,8 +133,6 @@
     <h3>Taking Up Space</h3>
     <hr>
 
-
-
     <p>Each HTML box gets its own space using 4 methods: </p>
     <ol>
         <li><u>block</u>: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width.</li>
@@ -141,9 +142,13 @@
 <u>inline</u>: This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).</li>
         <li><u>none</u>: This makes the element and its content disappear from the page entirely!</li>
     </ol>
-    <p class="color"> <strong>Note</strong> : change the display property of all your &lt;div&gt; to use the above methods. </p>
+    <h4><strong>But how to use it?</strong></h4>
+    <img src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%206.48.14%20pm.png">
+    <p></p>
+    <p> In the CSS tab, just like block, one can use other spacing properties too (like: none and inline).
+    
     <hr>
-    <p>Margin: Space around the element. The larger the margin, the more space between our element and the elements around it.</p>
+    <p>Margin: Space around the element.</p>
     <p>There are 2 ways to set the margin </p>
     <ul>
         <li><code>margin-top: (value)
@@ -162,20 +167,14 @@ or (value, value, value, value)</code></li>
     <p>Moving the values to the negative side : moving an element in the other direction, one can give CSS a negative value: </p>
     <p>For instance, margin-left: -20px will move the element twenty pixels to the left. 
 </p>
-    <p>
-        <hr>
-SOME KEY WORDS FOR THE ABOVE INFORMATION : </p>
-    <p>TM- Top Margin 
-</p>
-    <p>TB- Top Border</p>
-    <p>TP - Top Padding</p>
+    
     <hr>
     <h3>Floating and Clearing </h3>
     <hr>
-    <img style="float: left; margin-top:0px; margin-right:20px; max-height: 400px; margin-left: 0px" src="file:///Users/ishika/Documents/personal%20project%20/website/template/images/images.jpeg"/>
+    <img style="float: left; margin-top:0px; margin-right:20px; max-height: 400px; margin-left: 0px" src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%208.37.30%20pm.png"/>
     <p>FLOATING: It helps to position the elements such that the other elements floating do not get disturbed and all of them don’t land on top of each other. </p>
     <p>The div used is float.  It can be written as for - Right or Left. </p>
-    <p>CLEARING If sometimes the elements come on top of each other. This is used. </p>
+    <p>CLEARING: If sometimes the elements come on top of each other. This is used. </p>
     <p>clear: left :  it will immediately move below any floating elements on the left side of the page; it can also clear elements on the right. </p>
     <p>clear: both :  it will get out of the way of elements floating on the left and right</p>
     <p class="color">NOTE : If things are not positioned it just plunks itself down in the document.</p>
@@ -185,16 +184,17 @@ SOME KEY WORDS FOR THE ABOVE INFORMATION : </p>
     <p>1.  Absolute :  Absolute positioning is in relation to the first parent element it has that doesn't have position: static.</p>
     <p>2. Relative : Relative positioning tells the element to move relative to where it would have landed if it just had the default static positioning.</p>
     <p>3.  Fixed : Fixed element stays put even as other elements scroll past.</p>
+    <img src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%208.45.35%20pm.png">
+    <p></p>
+    <p>The above example shows how to put the different types of positioning in the CSS tab. Also, the same method will be applied to Relative and Fixed positioning</p>
     <hr>
     <h3>ID'S and Classess</h3>
     <hr>
-
-    <ul>
-        <li>Writing again and again the similar code can be sometimes difficult.  </li>
-        <li>Classes are used when the same code needs to be written for various parts. </li>
-        <li>ID’s on the other hand are kind of exception. They cannot be repeated and hence stand out. </li>
-        <li>They both are used while working with CSS and HTML. <span class="color">(both at the same time.)</span></li>
-        <li>Writing ID’s with a hash tag <span class="color"> (#ID name) </span> and Classes with a dot/ full stop in the starting <span class="color">(.class name) </span> is how we write the code in the CSS tab.</li>
+    
+    <p>Writing again and again the similar code can be sometimes difficult. Classes are used when the same code needs to be written for various parts. ID’s on the other hand are kind of exception. They cannot be repeated and hence stand out. They both are used while working with CSS and HTML. <span class="color">(both at the same time.)</span> </p>
+    <p><strong>WRITING IDS AND CLASSES IN CSS :</strong>Writing ID’s with a hash tag <span class="color"> (#ID name) </span> and Classes with a dot/ full stop in the starting <span class="color">(.class name) </span> is how we write the code in the CSS tab. </p>
+    <p><strong>WRITING IDS AND CLASSES IN HTML:</strong>( shown in the picture below)</p>
+    <img src="file:///Users/ishika/Documents/personal%20project%20/website/easycode/images/Screen%20Shot%202016-11-28%20at%208.55.52%20pm.png"/>
 
 
 
@@ -202,7 +202,6 @@ SOME KEY WORDS FOR THE ABOVE INFORMATION : </p>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/creative.min.js"></script>
-
 </body>
 
 </html>
